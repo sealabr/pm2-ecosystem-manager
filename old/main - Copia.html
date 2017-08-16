@@ -1,0 +1,73 @@
+   <div class="container" ng-controller="parisCtrl">
+
+      <!-- Static navbar -->
+      <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Project name</a>
+          </div>
+          <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="#">Home</a></li>
+              <li><a href="#!green">Initial Configs</a></li>
+              <li><a href="#!red">Firebase</a></li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                  <li><a href="#">Something else here</a></li>
+                  <li role="separator" class="divider"></li>
+                  <li class="dropdown-header">Nav header</li>
+                  <li><a href="#">Separated link</a></li>
+                  <li><a href="#">One more separated link</a></li>
+                </ul>
+              </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <li class="active"><a href="./">Default <span class="sr-only">(current)</span></a></li>
+              <li><a href="../navbar-static-top/">Static top</a></li>
+              <li><a href="../navbar-fixed-top/">Fixed top</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div><!--/.container-fluid -->
+      </nav>
+
+     <div class="col-lg-10">
+     <fieldset>
+        <legend>Configure System</legend>
+      <form class="form-horizontal" role="form" action='<?= base_url();?>index.php/home/save' method="post">
+       <div class="form-group">
+          <label for="default_folder" class="col-lg-3 control-label">Default Folder</label>
+          <div class="col-lg-6">
+            <input type="text" class="form-control" name="default_folder" id="default_folder" placeholder="Default Folder">
+          </div>
+        </div> 
+        <div class="form-group">
+          <label for="lastName" class="col-lg-3 control-label">Last Name</label>
+          <div class="col-lg-6">
+            <input type="text" class="form-control" name="lastName" id="lastName" placeholder="Last Name">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="email" class="col-lg-3 control-label">Email</label>
+          <div class="col-lg-6">
+            <input type="text" class="form-control" name="email" id="email" placeholder="Email">
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="col-lg-offset-3 col-lg-10">
+            <button type="submit" class="btn btn-success">Save</button> <a href="<?= base_url();?>index.php/home" class="btn btn-primary">Cancel</a>
+          </div>
+        </div>
+      </form>
+     </fieldset>
+    </div>
+
+    </div> <!-- /container -->

@@ -1,0 +1,48 @@
+ <div class="col-lg-10">
+ <fieldset>
+    <legend>Configure System {{val}}</legend>
+  <form class="form-horizontal" role="form" method="GET">
+   <div class="form-group">
+      <label for="apiKey" class="col-lg-3 control-label">apiKey</label>
+      <div class="col-lg-6">
+        <input type="text" class="form-control" name="apiKey" id="apiKey" placeholder="apiKey" ng-model="formInfo.apiKey">
+      </div>
+    </div> 
+    <div class="form-group">
+      <label for="authDomain" class="col-lg-3 control-label">authDomain</label>
+      <div class="col-lg-6">
+        <input type="text" class="form-control" name="authDomain" id="authDomain" placeholder="authDomain" ng-model="formInfo.authDomain">
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="databaseURL" class="col-lg-3 control-label">databaseURL</label>
+      <div class="col-lg-6">
+        <input type="text" class="form-control" name="databaseURL" id="databaseURL" placeholder="databaseURL"  ng-model="formInfo.databaseURL">
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="projectId" class="col-lg-3 control-label">projectId</label>
+      <div class="col-lg-6">
+        <input type="text" class="form-control" name="projectId" id="projectId" placeholder="projectId"  ng-model="formInfo.projectId">
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="storageBucket" class="col-lg-3 control-label">storageBucket</label>
+      <div class="col-lg-6">
+        <input type="text" class="form-control" name="storageBucket" id="storageBucket" placeholder="storageBucket"  ng-model="formInfo.storageBucket">
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="messagingSenderId" class="col-lg-3 control-label">messagingSenderId</label>
+      <div class="col-lg-6">
+        <input type="text" class="form-control" name="messagingSenderId" id="messagingSenderId" placeholder="messagingSenderId"  ng-model="formInfo.messagingSenderId">
+      </div>
+    </div>
+    <div class="form-group">
+      <div class="col-lg-offset-3 col-lg-10">
+        <button type="submit" ng-click="saveData()" class="btn btn-success">Save</button>
+      </div>
+    </div>
+  </form>
+ </fieldset>
+</div>
